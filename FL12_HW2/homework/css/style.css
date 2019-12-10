@@ -1,0 +1,164 @@
+/*
+
+write your code here
+
+*/
+@media print {
+    .tm-sidebar, .tm-content-box form, .flex-2-col img, .box-work, #about img, .tm-content-box img {
+        display: none;
+    }
+
+    .tm-main-content, .tm-content-box, .padding-medium, .tm-banner {
+        padding: 0;
+        margin: 0;
+    }
+
+    .tm-section-description {
+        text-align: center;
+    }
+
+    .flex-2-col {
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.tm-nav-item a:hover {
+    color: #fff;
+    background-color: #87CEFA;
+}
+
+.tm-banner {
+    background: linear-gradient(to right, lightskyblue, burlywood);
+}
+
+.tm-banner-inner {
+    background-color: #fff;
+}
+
+.tm-banner-text {
+    text-shadow: 5px 5px 3px #333;
+}
+
+.tm-banner-text {
+    text-shadow: 5px 5px 3px #333;
+    animation-name: move_from_right;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-timing-function: linear;
+}
+
+@keyframes move_from_right {
+    from {
+        margin-right: -400px;
+    }
+
+    to {
+        margin-right: 0;
+    }
+}
+
+.flex-2-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tm-section-title {
+    text-align: center;
+}
+
+.tm-section-title-box:hover {
+    background-color: lightgrey;
+    color: lightskyblue;
+    transition: ease-out 0.5s;
+}
+
+.padding-medium h2 {
+    color: lightskyblue;
+    text-align: center;
+}
+
+.padding-medium ol {
+    list-style: lower-alpha;
+}
+
+.padding-medium li:hover::before {
+    content: ">";
+}
+
+.padding-medium li:first-child::after,
+.padding-medium li:nth-child(3)::after {
+    content: "New";
+    color: red;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+}
+
+.blocks h2:first-child {
+    text-align: left;
+}
+
+.blocks p:nth-of-type(2n) {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: oblique;
+}
+
+.blocks li p::first-letter {
+    font-weight: bold;
+}
+
+.blocks li {
+    padding: 8px;
+}
+
+.box-work:nth-child(2n+1) {
+    background-color: lightskyblue;
+    color: #fff;
+}
+
+.tm-section-description {
+    line-height: 30px;
+    text-indent: 25px;
+}
+
+#contact input:focus {
+    background-color: lightskyblue;
+    color: #fff;
+}
+
+#contact textarea:focus {
+    background-color: lightskyblue;
+    color: #fff;
+}
+
+#contact_message {
+    background: url(../img/email-icon.png);
+    background-repeat: no-repeat;
+    background-position: 99% 97%;
+    background-size: 25px;
+}
+
+#contact button {
+    float: right;
+    height: 50px;
+    color: lightskyblue;
+    background-color: #fff;
+    border: 1px solid lightskyblue;
+}
+
+.tm-sidebar,
+.tm-content-box,
+.blocks {
+    box-shadow: 1px 1px 10px 1px rgba(61, 55, 61, 0.7);
+}
+
+section::before {
+    content: "";
+    border-top: 45px solid lightskyblue;
+    border-right: 45px solid transparent;
+}
